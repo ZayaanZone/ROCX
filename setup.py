@@ -10,6 +10,7 @@ setup(
     description="A python module to run tools",
     package_dir={"": "src"},
     packages=find_packages("src"),
+    include_package_data=True,
     entry_points={
         "console_scripts": [
             "rocx=roc.helper:run_cli"
