@@ -1,0 +1,28 @@
+{
+    "tools": [
+        {
+            "name": "Store Facebook Accounts",
+            "file": "file",
+            "dependencies": [
+                "requests", ["bs4", "beautifulsoup4"], "lxml"
+            ]
+        },
+        {
+            "name": "Facebook Auto Report (Fake Account)",
+            "file": "report_fake_account",
+            "dependencies": [
+                "requests"
+            ]
+        },
+        {
+            "name": "Facebook Auto Report (Imposter Report)",
+            "file": "comming_soon",
+            "dependencies": []
+        },
+        {
+            "name": "Facebook Auto Report (Pretending to Me)",
+            "file": "comming_soon",
+            "dependencies": []
+        }
+    ]
+}

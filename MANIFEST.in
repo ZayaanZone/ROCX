@@ -1,0 +1,2 @@
+include src/roc/main/*so
+include src/roc/main/*json

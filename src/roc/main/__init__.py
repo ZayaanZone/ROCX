@@ -28,34 +28,7 @@ CYAN = "\033[96m"
 END = '\033[0m'
 BLACK = "\033[0;30m"
 
-service_json = {
-    "tools": [
-        {
-            "name": "Store Facebook Accounts",
-            "file": "file",
-            "dependencies": [
-                "requests", ["bs4", "beautifulsoup4"], "lxml"
-            ]
-        },
-        {
-            "name": "Facebook Auto Report (Fake Account)",
-            "file": "report_fake_account",
-            "dependencies": [
-                "requests"
-            ]
-        },
-        {
-            "name": "Facebook Auto Report (Imposter Report)",
-            "file": "comming_soon",
-            "dependencies": []
-        },
-        {
-            "name": "Facebook Auto Report (Pretending to Me)",
-            "file": "comming_soon",
-            "dependencies": []
-        }
-    ]
-}
+service_json = json.loads(open(os.path.join(os.path.dirname(__file__), 'services.json')).read())
 
 
 # MAIN
